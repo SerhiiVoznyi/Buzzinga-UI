@@ -1,1 +1,1 @@
-# Bazinga-UI
+# Buzzinga-UI
