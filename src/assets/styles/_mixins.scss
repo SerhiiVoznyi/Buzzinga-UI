@@ -1,0 +1,21 @@
+@mixin border-radius(
+  $top-left: 1rem,
+  $top-right: 1rem,
+  $bottom-left: 1rem,
+  $bottom-right: 1rem) {
+  border-radius: $top-left $top-right $bottom-left $bottom-right;
+  -moz-border-radius: $top-left $top-right $bottom-left $bottom-right;
+  -webkit-border-radius: $top-left $top-right $bottom-left $bottom-right;
+}
+
+
+@mixin box-shadow(
+  $shadow-color: $shadow-black,
+  $horizontal: 0px,
+  $vertical: 0px,
+  $blur-radius: 10px,
+  $spread-radius: 0px) {
+  box-shadow: $horizontal $vertical $blur-radius $spread-radius $shadow-color;
+  -webkit-box-shadow: $horizontal $vertical $blur-radius $spread-radius $shadow-color;
+  -moz-box-shadow: $horizontal $vertical $blur-radius $spread-radius $shadow-color;
+}

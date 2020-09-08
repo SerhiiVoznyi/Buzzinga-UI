@@ -1,0 +1,12 @@
+@import '../../assets/styles';
+
+$page: '.bazinga-page';
+
+#{$page} {
+  margin: 10px;
+  padding: 10px;
+  min-height: 100%;
+  background: $grey-1;
+  @include border-radius;
+  @include box-shadow;
+}

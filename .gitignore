@@ -1,0 +1,19 @@
+
+### Node.js ###
+
+# Log files
+*.log
+
+# NPM
+node_modules/
+package-lock.json
+
+# Webpack
+build/
+dist/
+
+# Frontend Maven Plugin
+node/
+
+# Tests
+coverage/

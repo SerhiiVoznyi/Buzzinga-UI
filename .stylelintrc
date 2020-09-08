@@ -1,0 +1,13 @@
+{
+    "extends": "stylelint-config-recommended-scss",
+    "plugins": ["stylelint-scss", "stylelint-declaration-use-variable", "stylelint-prettier"],
+    "rules": {
+      "prettier/prettier": [true, {"severity": "warning", "endOfLine":"auto"}],
+      "no-descending-specificity": null ,
+      "selector-pseudo-class-no-unknown": [true, {"ignorePseudoClasses": ["global"]}],
+      "block-no-empty": [true, {"severity": "warning"}],
+      "selector-max-attribute": 0,
+      "color-named": "never",
+      "declaration-block-trailing-semicolon": "always"
+    }
+}
