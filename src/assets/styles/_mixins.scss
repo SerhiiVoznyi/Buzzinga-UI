@@ -1,3 +1,9 @@
+@mixin defaults {
+  box-sizing: border-box;
+  margin: $margin-default;
+  padding: $padding-default;
+}
+
 @mixin border-radius(
   $top-left: 1rem,
   $top-right: 1rem,
@@ -18,4 +24,65 @@
   box-shadow: $horizontal $vertical $blur-radius $spread-radius $shadow-color;
   -webkit-box-shadow: $horizontal $vertical $blur-radius $spread-radius $shadow-color;
   -moz-box-shadow: $horizontal $vertical $blur-radius $spread-radius $shadow-color;
+}
+
+@mixin desktop_large {
+  @media (min-width: 1681px) {
+    @content;
+  }
+}
+
+@mixin desktop_medium {
+  @media (min-width: 1441px) {
+    @content;
+  }
+}
+
+@mixin desktop_small {
+  @media (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 376px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin ie {
+  @media screen and (min-width: 0 \0) and (min-resolution: +72dpi) {
+    @content;
+  }
+}
+
+@mixin flex(
+  $display: flex,
+  $direction: row,
+  $wrap: nowrap,
+  $justify: flex-start,
+  $align-items: flex-start,
+  $aligncontent: stretch
+) {
+  display: $display;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-content: $aligncontent;
+  align-items: $align-items;
+  & > * {
+    min-width: 0;
+  }
+  @include ie {
+    & > * {
+      flex: 0 1 auto;
+      display: block;
+    }
+  }
 }

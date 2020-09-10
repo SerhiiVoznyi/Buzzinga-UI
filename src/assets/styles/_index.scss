@@ -1,7 +1,9 @@
 @import "variables";
 @import "mixins";
+@import "reset";
 @import "fonts";
+@import "typography";
 
-#greenfield-page-template {
+#bazinga-app {
   @import "components";
 }

@@ -1,0 +1,14 @@
+@import '../../assets/styles';
+
+$box: '.bz-box';
+
+#{$box} {
+  @include defaults;
+  background: white;
+
+  @include box-shadow;
+
+  &--rounded {
+    @include border-radius;
+  }
+}

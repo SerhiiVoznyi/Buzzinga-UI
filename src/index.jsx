@@ -2,14 +2,12 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Page from './components/Page/Page'
+import ThemeProvider from './pages/ThemeProvider'
 
 import './index.scss'
 
-const title = 'This is the first app added'
-
 ReactDOM.render(
-  <Page content={<h1>Hello</h1>} />,
+  <ThemeProvider />,
   document.getElementById('bazinga-app')
 )
 

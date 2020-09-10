@@ -1,0 +1,19 @@
+@import '../../assets/styles';
+
+$button: '.bz-btn';
+
+#{$button} {
+  padding: 15px 25px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-image: none;
+
+  &:active, &:focus {
+    outline: 0;
+  }
+
+  &--rounded {
+    @include border-radius;
+  }
+}

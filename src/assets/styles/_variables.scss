@@ -1,10 +1,30 @@
-$app-name: 'bazinga';
+// App
+$app-name: 'bz';
 
-
+// urls
+$fonts-path: "/assets/fonts/";
 
 // Colors
 
 $shadow-black: rgba(0,0,0,0.75);
+
+// Headers
+$h1-desktop-font-size: 50px;
+$h1-desktop-line-height: 50px;
+$h2-desktop-font-size: 32px;
+$h2-desktop-line-height: 35px;
+$h3-desktop-font-size: 25px;
+$h3-desktop-line-height: 32px;
+$h4-desktop-font-size: 20px;
+$h4-desktop-line-height: 28px;
+$h1-mobile-font-size: 40px;
+$h1-mobile-line-height: 40px;
+$h2-mobile-font-size: 25px;
+$h2-mobile-line-height: 25px;
+$h3-mobile-font-size: 20px;
+$h3-mobile-line-height: 28px;
+$h4-mobile-font-size: 18px;
+$h4-mobile-line-height: 24px;
 
 
 $grey-1: #f1f2f2;
@@ -13,3 +33,14 @@ $grey-3: #dadada;
 $grey-4: #a8a8a7;
 $grey-5: #7c7c7b;
 $grey-6: #575756;
+
+
+// Sizes
+
+
+// Margins
+$margin-default: 8px;
+
+
+// Paddings
+$padding-default: 10px;
