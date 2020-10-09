@@ -1,38 +1,48 @@
 h1 {
-  font-size: $h1-mobile-font-size;
-  line-height: $h1-mobile-line-height;
-  @include desktop_small {
-    font-size: $h1-desktop-font-size;
-    line-height: $h1-desktop-line-height;
-  }
+  font-size: 3.3125rem;
+  line-height: 1.15em;
 }
+
 h2 {
-  font-size: $h2-mobile-font-size;
-  line-height: $h2-mobile-line-height;
-  @include desktop_small {
-    font-size: $h2-desktop-font-size;
-    line-height: $h2-desktop-line-height;
-  }
+  font-size: 2.25rem;
+  line-height: 1.5em;
 }
+
 h3 {
-  font-size: $h3-mobile-font-size;
-  line-height: $h3-mobile-line-height;
-  @include desktop_small {
-    font-size: $h3-desktop-font-size;
-    line-height: $h3-desktop-line-height;
-  }
+  font-size: 1.5625rem;
+  line-height: 1.4em;
 }
-h4,
-h5,
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.5em;
+}
+
+h5 {
+  font-size: 1.0625rem;
+  line-height: 1.55em;
+}
+
 h6 {
-  font-size: $h4-mobile-font-size;
-  line-height: $h4-mobile-line-height;
-  @include desktop_small {
-    font-size: $h4-desktop-font-size;
-    line-height: $h4-desktop-line-height;
-  }
+  font-size: .75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Roboto;
+  line-height: 1.5em;
+  margin: 10px 0px;
+}
+
+p {
+  margin: 10px 0px;
+}
+
+blockquote {
+  font-style: italic;
+  font-weight: 300;
+  border-left: 2px solid $grey-4;
+  padding-left: 20px;
+  margin: 10px 0px;
 }

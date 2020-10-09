@@ -2,12 +2,12 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ThemeProvider from './pages/ThemeProvider'
+import Components from './pages/Components'
 
 import './index.scss'
 
 ReactDOM.render(
-  <ThemeProvider />,
+  <Components />,
   document.getElementById('bazinga-app')
 )
 

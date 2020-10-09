@@ -1,0 +1,11 @@
+@import '../../assets/styles';
+
+$bz-title: '.bz-title';
+
+#{$bz-title} {
+  font-weight: normal;
+
+  &--secondary {
+    font-weight: 300;
+  }
+}

@@ -5,12 +5,15 @@ import './Button.scss'
 
 const classes = new BEMHelper('btn')
 
+const sayILoveYou = () => { alert('I love you Alisa!') }
+
 const Button = (props) => {
   const { text, type } = props
   return (
     <button
       type={type}
       className={classes(null)}
+      onClick={sayILoveYou}
     >
       {text}
     </button>)

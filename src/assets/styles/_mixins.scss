@@ -76,13 +76,4 @@
   justify-content: $justify;
   align-content: $aligncontent;
   align-items: $align-items;
-  & > * {
-    min-width: 0;
-  }
-  @include ie {
-    & > * {
-      flex: 0 1 auto;
-      display: block;
-    }
-  }
 }

@@ -3,12 +3,49 @@
 $box: '.bz-box';
 
 #{$box} {
-  @include defaults;
   background: white;
+  
+  &--primary {
+    box-sizing: border-box;
+    margin: $margin-default;
+    padding: 5%;
 
-  @include box-shadow;
+    @include desktop_small {
+      padding: 3%;
+    }
+
+    @include desktop_medium {
+      padding: 2%;
+    }
+
+    @include box-shadow;
+  }
+
+  &--secondary {
+    padding-right: 10px;
+
+    @include desktop_small {
+      width: 47%;
+    }
+
+    @include desktop_medium {
+      width: 33%;
+    }
+
+    &:last-child {
+      padding-right: 0px;
+    }
+  }
 
   &--rounded {
     @include border-radius;
+  }
+
+  &--flex {
+    @include flex(flex, column, wrap);
+
+    @include desktop_small {
+      @include flex(flex, row, wrap, flex-start, flex-start);
+    }
   }
 }

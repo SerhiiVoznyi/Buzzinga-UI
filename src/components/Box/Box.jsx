@@ -6,9 +6,15 @@ const classes = new BEMHelper('box')
 
 const Box = (props) => {
   return (
-    <article className={classes(null, { rounded: props.rounded })}>
+    <section className={classes(null, {
+      primary: props.primary,
+      rounded: props.rounded,
+      secondary: props.secondary,
+      flex: props.flex
+    })}
+    >
       {props.children}
-    </article>
+    </section>
   )
 }
 
