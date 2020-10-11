@@ -5,15 +5,18 @@ import Title from '@bz/components/Title/Title'
 import Box from '@bz/components/Box/Box'
 import Block from '@bz/components/Block/Block'
 import Card from '@bz/components/Card/Card'
+import Divider from '@bz/components/Divider/Divider'
 import Button from '@bz/components/Button/Button'
 
 const Typography = () => (
   <Box primary rounded>
     <Title type='h1' title='Bazinga UI' />
-    <h4>Visual Design Style Guide</h4>
+    <p>Visual Design Style Guide</p>
     <Box flex>
+
       <Box secondary>
         <h3>Titles and Headers</h3>
+        <Divider />
         <Block title='Title H1'>
           <Title type='h1' title='Headline H1 header' />
         </Block>
@@ -35,6 +38,7 @@ const Typography = () => (
       </Box>
       <Box secondary>
         <h3>Secondary Titles</h3>
+        <Divider />
         <Block title='Title H1'>
           <Title type='h1' title='Headline H1 header' secondary />
         </Block>
@@ -56,6 +60,7 @@ const Typography = () => (
       </Box>
       <Box secondary>
         <h3>Text</h3>
+        <Divider />
         <Block title='Paragraph'>
           <p>
           In descriptive writing, the author does not tell the reader what was seen, felt, tested, smelled, or heard.
@@ -75,6 +80,27 @@ const Typography = () => (
       </Box>
       <Box secondary>
         <h3>Cards</h3>
+        <Divider />
+        <Card>
+          <h3>Example</h3>
+          In descriptive writing, the author does not tell the reader what was seen, felt, tested, smelled, or heard.
+          Rather, he describes something that he experienced and, through his choice of words, makes it seem real.
+          In other words, descriptive writing is vivid, colorful, and detailed.
+        </Card>
+      </Box>
+      <Box secondary>
+        <h3>Cards</h3>
+        <Divider />
+        <Card>
+          <h3>Example</h3>
+          In descriptive writing, the author does not tell the reader what was seen, felt, tested, smelled, or heard.
+          Rather, he describes something that he experienced and, through his choice of words, makes it seem real.
+          In other words, descriptive writing is vivid, colorful, and detailed.
+        </Card>
+      </Box>
+      <Box secondary>
+        <h3>Cards</h3>
+        <Divider />
         <Card>
           <h3>Example</h3>
           In descriptive writing, the author does not tell the reader what was seen, felt, tested, smelled, or heard.

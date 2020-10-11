@@ -6,13 +6,11 @@ import './Card.scss'
 const classes = new BEMHelper('card')
 
 const Card = (props) => {
-  const { links, children, style } = props
+  const { children, style } = props
 
   return (
     <div className={classes()}>
-      <div className={classes('header')} style={style}>
-        {(links && links.length > 0) && (<img src={links} />)}
-      </div>
+      <div className={classes('header')} style={style} />
       <div className={classes('body')}>
         {children}
       </div>

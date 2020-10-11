@@ -9,7 +9,7 @@ $header-min-height: 50px;
   display: inline-block;
   width: $card-width;
   min-height: $card-min-height;
-  margin-top: $header-min-height / 2;
+  margin-top: ($header-min-height / 2) + 10px;
   padding-bottom: 20px;
 
   img {

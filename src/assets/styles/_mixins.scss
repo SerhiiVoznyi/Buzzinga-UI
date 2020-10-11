@@ -68,12 +68,12 @@
   $wrap: nowrap,
   $justify: flex-start,
   $align-items: flex-start,
-  $aligncontent: stretch
+  $alignContent: stretch
 ) {
   display: $display;
   flex-direction: $direction;
   flex-wrap: $wrap;
   justify-content: $justify;
-  align-content: $aligncontent;
+  align-content: $alignContent;
   align-items: $align-items;
 }
